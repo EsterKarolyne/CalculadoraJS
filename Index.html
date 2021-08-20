@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="files/icone.ico" type="image/x-icon">
+    <title>Equaciona</title>
+</head>
+<body>
+        <div class="fundo">
+
+            
+            <div class="calculadora">
+                
+                <p id="resultado"></p>
+                <table>
+                    <tr>
+                        <td><button class="numeros" onclick="limpar()">C</button></td>
+                        <td><button class="numeros" onclick="apagar()">&lt</button></td>
+                        <td><button class="numeros" onclick="conta('/')">÷</button></td>
+                        <td><button class="numeros" onclick="conta('*')">X</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="numeros" onclick="conta('7')">7</button></td>
+                        <td><button class="numeros" onclick="conta('8')">8</button></td>
+                        <td><button class="numeros" onclick="conta('9')">9</button></td>
+                        <td><button class="numeros" onclick="conta('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="numeros" onclick="conta('4')">4</button></td>
+                        <td><button class="numeros" onclick="conta('5')">5</button></td>
+                        <td><button class="numeros" onclick="conta('6')">6</button></td>
+                        <td><button class="numeros" onclick="conta('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="numeros" onclick="conta('1')">1</button></td>
+                        <td><button class="numeros" onclick="conta('2')">2</button></td>
+                        <td><button class="numeros" onclick="conta('3')">3</button></td>
+                        <td rowspan="2"><button class="igual" onclick="igual()">=</button></td> <!--expande 2 linhas-->
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button class="zero" onclick="conta('0')">0</button></td> <!--expande para 2 colunas-->
+                        <td><button class="numeros" onclick="conta('.')">.</button></td>
+                        
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+       
+
+    <script src="ambiente.js"></script>
+</body>
+</html>
